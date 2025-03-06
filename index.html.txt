@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="hero">
+        <h1>Welcome to Movie World</h1>
+    </section>
+    <nav class="navbar">
+        <a href="#movies">Movies</a>
+        <a href="#actors">Actors</a>
+        <a href="#directors">Directors</a>
+    </nav>
+    <section id="movies" class="section">
+        <h2>Movies</h2>
+        <div class="movies"></div>
+    </section>
+    <section id="actors" class="section">
+        <h2>Popular Actors</h2>
+        <div class="categories">
+            <div class="category"><img src="images/NTR2.jpg" alt="Jr NTR"><h3>Jr NTR</h3></div>
+            <div class="category"><img src="images/ALLU.jpg" alt="Allu Arjun"><h3>Allu Arjun</h3></div>
+            <div class="category"><img src="images/MAHESH.jpg" alt="Mahesh Babu"><h3>Mahesh Babu</h3></div>
+        </div>
+    </section>
+    <section id="directors" class="section">
+        <h2>Famous Directors</h2>
+        <div class="categories">
+            <div class="category"><img src="images/RA.jpg" alt="Rajamouli"><h3>Rajamouli</h3></div>
+            <div class="category"><img src="images/TRIVI.jpg" alt="Trivikram"><h3>Trivikram</h3></div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

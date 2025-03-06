@@ -1,0 +1,34 @@
+const movies = [
+    { title: "RRR", img: "images/rrr.jpg" },
+    { title: "Baahubali", img: "images/baahubali.jpg" },
+    { title: "Pushpa", img: "images/pushpa.jpg" },
+    { title: "Devara", img: "images/devara.jpg" },
+    { title: "Guntur Kaaram", img: "images/guntur-kaaram.jpg" },
+    { title: "Janata Garage", img: "images/janata-garage.jpg" },
+    { title: "Jai Lava Kusa", img: "images/jai-lava-kusa.jpg" },
+    { title: "Mirchi", img: "images/mirchi.jpg" },
+    { title: "Sita Ramam", img: "images/sita-ramam.jpg" },
+    { title: "MAD", img: "images/mad.jpg" },
+    { title: "Hi Nanna", img: "images/hi-nanna.jpg" },
+    { title: "Simhadri", img: "images/simhadri.jpg" },
+    { title: "Adhurs", img: "images/adhurs.jpg" },
+    { title: "Seetamma Vakitlo Sirimalle Chettu", img: "images/seetamma-vakitlo-sirimalle-chettu.jpg" },
+    { title: "Sankranthiki Vastunam", img: "images/sankranthiki-vastunam.jpg" },
+    { title: "Krack", img: "images/krack.jpg" },
+    { title: "Mass Jathara", img: "images/mass-jathara.jpg" },
+    { title: "Hello Guru Prema Kosame", img: "images/hello-guru-prema-kosame.jpg" },
+    { title: "Kumari 21 F", img: "images/kumari-21f.jpg" },
+    { title: "Kanguva", img: "images/kanguva.jpg" },
+    { title: "Most Eligible Bachelor", img: "images/most-eligible-bachelor.jpg" },
+    { title: "Love Story", img: "images/love-story.jpg" },
+    { title: "Thandel", img: "images/thandel.jpg" }
+];
+
+const movieContainer = document.querySelector(".movies");
+
+movies.forEach(movie => {
+    const movieElement = document.createElement("div");
+    movieElement.classList.add("movie");
+    movieElement.innerHTML = `<img src="${movie.img}" alt="${movie.title}"><h3>${movie.title}</h3>`;
+    movieContainer.appendChild(movieElement);
+});
